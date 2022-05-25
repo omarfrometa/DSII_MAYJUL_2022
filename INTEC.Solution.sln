@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "INTEC.ConsoleApp", "INTEC.C
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "INTEC.WindowsFormsApp", "INTEC.WindowsFormsApp\INTEC.WindowsFormsApp.csproj", "{92FF3C68-D038-4A26-817C-8BB99F48D5D0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "INTEC.Patient", "INTEC.Patient\INTEC.Patient.csproj", "{0BB0CFF0-F925-45FF-8B79-62F9C2A187F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{92FF3C68-D038-4A26-817C-8BB99F48D5D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92FF3C68-D038-4A26-817C-8BB99F48D5D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92FF3C68-D038-4A26-817C-8BB99F48D5D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BB0CFF0-F925-45FF-8B79-62F9C2A187F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BB0CFF0-F925-45FF-8B79-62F9C2A187F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BB0CFF0-F925-45FF-8B79-62F9C2A187F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BB0CFF0-F925-45FF-8B79-62F9C2A187F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
