@@ -1,0 +1,115 @@
+﻿@page
+@model ShoppingCartNetCore3.Pages.Productos.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Product</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Product.Id" />
+            <div class="form-group">
+                <label asp-for="Product.Code" class="control-label"></label>
+                <input asp-for="Product.Code" class="form-control" />
+                <span asp-validation-for="Product.Code" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.Name" class="control-label"></label>
+                <input asp-for="Product.Name" class="form-control" />
+                <span asp-validation-for="Product.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.Description" class="control-label"></label>
+                <input asp-for="Product.Description" class="form-control" />
+                <span asp-validation-for="Product.Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.ListPrice" class="control-label"></label>
+                <input asp-for="Product.ListPrice" class="form-control" />
+                <span asp-validation-for="Product.ListPrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.PurchasePrice" class="control-label"></label>
+                <input asp-for="Product.PurchasePrice" class="form-control" />
+                <span asp-validation-for="Product.PurchasePrice" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.MinStock" class="control-label"></label>
+                <input asp-for="Product.MinStock" class="form-control" />
+                <span asp-validation-for="Product.MinStock" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.MaxStock" class="control-label"></label>
+                <input asp-for="Product.MaxStock" class="form-control" />
+                <span asp-validation-for="Product.MaxStock" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.SupplierId" class="control-label"></label>
+                <select asp-for="Product.SupplierId" class="form-control" asp-items="ViewBag.SupplierId"></select>
+                <span asp-validation-for="Product.SupplierId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.CategoryId" class="control-label"></label>
+                <select asp-for="Product.CategoryId" class="form-control" asp-items="ViewBag.CategoryId"></select>
+                <span asp-validation-for="Product.CategoryId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.MarkId" class="control-label"></label>
+                <select asp-for="Product.MarkId" class="form-control" asp-items="ViewBag.MarkId"></select>
+                <span asp-validation-for="Product.MarkId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.Width" class="control-label"></label>
+                <input asp-for="Product.Width" class="form-control" />
+                <span asp-validation-for="Product.Width" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.Height" class="control-label"></label>
+                <input asp-for="Product.Height" class="form-control" />
+                <span asp-validation-for="Product.Height" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.Weight" class="control-label"></label>
+                <input asp-for="Product.Weight" class="form-control" />
+                <span asp-validation-for="Product.Weight" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.Color" class="control-label"></label>
+                <input asp-for="Product.Color" class="form-control" />
+                <span asp-validation-for="Product.Color" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.Picture" class="control-label"></label>
+                <input asp-for="Product.Picture" class="form-control" />
+                <span asp-validation-for="Product.Picture" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Product.Enabled" /> @Html.DisplayNameFor(model => model.Product.Enabled)
+                </label>
+            </div>
+            <div class="form-group">
+                <label asp-for="Product.CreatedDate" class="control-label"></label>
+                <input asp-for="Product.CreatedDate" class="form-control" />
+                <span asp-validation-for="Product.CreatedDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
